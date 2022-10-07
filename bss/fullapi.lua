@@ -8,3 +8,5 @@ api = {
 for i, v in next, game:GetService("ReplicatedStorage").Morphs:GetChildren() do
     table.insert(api.morphs, v.Name)
 end
+
+return api
