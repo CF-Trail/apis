@@ -1,4 +1,4 @@
-getgenv().api = {
+api = {
     morphs = {},
     windy = nil,
     vicious = nil,
