@@ -1,7 +1,10 @@
 getgenv().api = {
-morphs = {},
+    morphs = {},
+    windy = nil,
+    vicious = nil,
+    windDonate = false,
 }
 
-for i,v in next, game:GetService("ReplicatedStorage").Morphs:GetChildren() do
-table.insert(api.morphs,v.Name)
+for i, v in next, game:GetService("ReplicatedStorage").Morphs:GetChildren() do
+    table.insert(api.morphs, v.Name)
 end
