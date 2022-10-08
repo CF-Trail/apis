@@ -1,5 +1,6 @@
 api = {
     morphs = {},
+    dispensers = {},
     windy = nil,
     vicious = nil,
     windDonate = false,
@@ -13,6 +14,12 @@ end
 
 for i, v in next, game:GetService("ReplicatedStorage").Morphs:GetChildren() do
     table.insert(api.morphs, v.Name)
+end
+
+for i, v in next, workspace.Toys:GetChildren() do
+    if string.match(v.Name,"Dispenser") then
+       table.insert(api.dispensers,v.Name)     
+    end
 end
 
 return api
