@@ -22,7 +22,6 @@ for i, v in next, workspace.Toys:GetChildren() do
        table.insert(api.dispensers,v.Name)
     elseif string.match(v.Name,"Field Boost") then
        table.insert(api.fieldboosters,v.Name)   
-     end
     end
 end
 
