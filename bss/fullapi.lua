@@ -2,6 +2,7 @@ api = {
     morphs = {},
     dispensers = {},
     fieldboosters = {},
+    npcs = {},
     walkspeed = game.Players.LocalPlayer.Character:FindFirstChildOfClass("Humanoid").WalkSpeed,
     jumppower = game.Players.LocalPlayer.Character:FindFirstChildOfClass("Humanoid").JumpPower,
 }
@@ -23,6 +24,10 @@ for i, v in next, workspace.Toys:GetChildren() do
        table.insert(api.fieldboosters,v.Name)   
      end
     end
+end
+
+for i,v in next, workspace.NPCS:GetChildren() do
+   table.insert(npcs,v.Name)
 end
 
 return api
