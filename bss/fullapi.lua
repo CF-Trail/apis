@@ -4,6 +4,7 @@ api = {
     fieldboosters = {},
     npcs = {},
     amulets = {},
+    fasttravel = {"Slingshot","Red Cannon","Yellow Cannon","Blue Cannon"},
     walkspeed = game.Players.LocalPlayer.Character:FindFirstChildOfClass("Humanoid").WalkSpeed,
     jumppower = game.Players.LocalPlayer.Character:FindFirstChildOfClass("Humanoid").JumpPower,
 }
