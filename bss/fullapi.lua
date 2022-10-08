@@ -1,9 +1,8 @@
 api = {
     morphs = {},
     dispensers = {},
-    windy = nil,
-    vicious = nil,
-    windDonate = false,
+    walkspeed = game.Players.LocalPlayer.Character:FindFirstChildOfClass("Humanoid").WalkSpeed,
+    jumppower = game.Players.LocalPlayer.Character:FindFirstChildOfClass("Humanoid").JumpPower,
 }
 
 notifications = loadstring(game:HttpGet("https://raw.githubusercontent.com/Jxereas/UI-Libraries/main/notification_gui_library.lua", true))()
