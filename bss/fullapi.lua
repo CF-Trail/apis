@@ -26,7 +26,7 @@ for i, v in next, workspace.Toys:GetChildren() do
     end
 end
 
-for i,v in next, workspace.NPCS:GetChildren() do
+for i,v in next, workspace.NPCs:GetChildren() do
    table.insert(npcs,v.Name)
 end
 
