@@ -47,7 +47,7 @@ end
 
 for i,v in next, workspace.Toys:GetDescendants() do
        if v.Name == 'Requirements' and v.IsA(v,"ModuleScript") then
-           table.insert(toyRequirements,v)
+           table.insert(api.toyRequirements,v)
        end
 end
 
