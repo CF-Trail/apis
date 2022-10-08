@@ -27,7 +27,7 @@ for i, v in next, workspace.Toys:GetChildren() do
 end
 
 for i,v in next, workspace.NPCs:GetChildren() do
-   table.insert(npcs,v.Name)
+   table.insert(api.npcs,v.Name)
 end
 
 return api
