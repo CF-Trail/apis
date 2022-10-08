@@ -4,7 +4,7 @@ api = {
     fieldboosters = {},
     npcs = {},
     amulets = {},
-    fasttravel = {"Slingshot","Red Cannon","Yellow Cannon","Blue Cannon"},
+    toyRequirememnts = {},
     walkspeed = game.Players.LocalPlayer.Character:FindFirstChildOfClass("Humanoid").WalkSpeed,
     jumppower = game.Players.LocalPlayer.Character:FindFirstChildOfClass("Humanoid").JumpPower,
 }
@@ -43,6 +43,14 @@ end
 
 for i,v in next, workspace.Amulets:GetChildren() do
    table.insert(api.amulets,v.Name)    
+end
+
+for i,v in next, workspace.Toys:GetChildren() do
+    for a,b in next, v:GetChildren() do
+       if v.Name == 'Requirements' and v.IsA(v,"ModuleScript") then
+           table.insert(toyRequirements,v)     
+       end
+    end
 end
 
 return api
