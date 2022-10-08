@@ -3,6 +3,7 @@ api = {
     dispensers = {},
     fieldboosters = {},
     npcs = {},
+    amulets = {},
     walkspeed = game.Players.LocalPlayer.Character:FindFirstChildOfClass("Humanoid").WalkSpeed,
     jumppower = game.Players.LocalPlayer.Character:FindFirstChildOfClass("Humanoid").JumpPower,
 }
@@ -27,6 +28,10 @@ end
 
 for i,v in next, workspace.NPCs:GetChildren() do
    table.insert(api.npcs,v.Name)
+end
+
+for i,v in next, workspace.Amulets:GetChildren() do
+   table.insert(api.amulets,v.Name)    
 end
 
 return api
