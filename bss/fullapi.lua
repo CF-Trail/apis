@@ -20,7 +20,7 @@ function api:AntiSleep()
     Hum:GetPropertyChangedSignal("Health"):Connect(function()
     if Hum.Health <= 25 then
     Hum.Parent = nil;
-    Hum.Parent = Character;
+    Hum.Parent = game.Players.LocalPlayer.Character;
     end
 end)    
 end
