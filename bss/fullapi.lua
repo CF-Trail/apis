@@ -17,7 +17,7 @@ end
 function api:AntiSleep()
     local Hum = game.Players.LocalPlayer.Character:WaitForChild("Humanoid")
     Hum:GetPropertyChangedSignal("Health"):Connect(function()
-    if Hum.Health <= 10 then
+    if Hum.Health <= 25 then
     Hum.Parent = nil;
     Hum.Parent = Character;
     end
