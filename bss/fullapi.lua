@@ -14,6 +14,16 @@ function api:MakeNotification(t,b,tt)
     notifications.new(t,b,tt,true,5)
 end
 
+function api:AntiSleep()
+    local Hum = game.Players.LocalPlayer.Character:WaitForChild("Humanoid")
+    Hum:GetPropertyChangedSignal("Health"):Connect(function()
+    if Hum.Health <= 10 then
+    Hum.Parent = nil;
+    Hum.Parent = Character;
+    end
+end)    
+end
+
 for i, v in next, game:GetService("ReplicatedStorage").Morphs:GetChildren() do
     table.insert(api.morphs, v.Name)
 end
