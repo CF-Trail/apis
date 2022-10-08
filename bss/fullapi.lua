@@ -45,12 +45,10 @@ for i,v in next, workspace.Amulets:GetChildren() do
    table.insert(api.amulets,v.Name)    
 end
 
-for i,v in next, workspace.Toys:GetChildren() do
-    for a,b in next, v:GetChildren() do
+for i,v in next, workspace.Toys:GetDescendants() do
        if v.Name == 'Requirements' and v.IsA(v,"ModuleScript") then
-           table.insert(toyRequirements,v)     
+           table.insert(toyRequirements,v)
        end
-    end
 end
 
 return api
