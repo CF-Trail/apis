@@ -17,7 +17,7 @@ for i, v in next, game:GetService("ReplicatedStorage").Morphs:GetChildren() do
 end
 
 for i, v in next, workspace.Toys:GetChildren() do
-    if string.match(v.Name,"Dispenser") then
+    if string.match(v.Name,"Dispenser") and v.Name ~= "Royal Jelly Dispenser" then
        table.insert(api.dispensers,v.Name)     
     end
 end
