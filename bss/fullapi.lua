@@ -1,6 +1,7 @@
 api = {
     morphs = {},
     dispensers = {},
+    fieldboosters = {},
     walkspeed = game.Players.LocalPlayer.Character:FindFirstChildOfClass("Humanoid").WalkSpeed,
     jumppower = game.Players.LocalPlayer.Character:FindFirstChildOfClass("Humanoid").JumpPower,
 }
@@ -17,7 +18,10 @@ end
 
 for i, v in next, workspace.Toys:GetChildren() do
     if string.match(v.Name,"Dispenser") and v.Name ~= "Royal Jelly Dispenser" and v.Name ~= "Ant Pass Dispenser" then
-       table.insert(api.dispensers,v.Name)     
+       table.insert(api.dispensers,v.Name)
+    elseif string.match(v.Name,"Field Boost") then
+       table.insert(api.fieldboosters,v.Name)   
+     end
     end
 end
 
