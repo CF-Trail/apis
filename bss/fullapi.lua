@@ -1,6 +1,3 @@
---[[
-github pls update
-]]
 api = {
     ver = "1.0",
     morphs = {},
@@ -10,6 +7,7 @@ api = {
     amulets = {},
     toyRequirements = {},
     codes = {"2Billion","FrozenBugReboot","5MFavorites","DarzethDoodads","Thnxcyastoybox","WalmartToys","FourYearFiesta","10mMembers","1MLikes",'PlushFriday','BANNED','Cubly','Teespring','BeesBuzz123','500mil','Marshmallow','ClubConverters','Sure','GumdropsForScience','SecretProfileCode','ClubBean','Wink','38217','Bopmaster','Buzz','Cog','Connoisseur','Crawlers','Nectar','Roof','Wax'},
+    sounds = {},
     walkspeed = game.Players.LocalPlayer.Character:FindFirstChildOfClass("Humanoid").WalkSpeed,
     jumppower = game.Players.LocalPlayer.Character:FindFirstChildOfClass("Humanoid").JumpPower,
 }
@@ -55,5 +53,11 @@ for i,v in next, workspace.Toys:GetDescendants() do
            table.insert(api.toyRequirements,v)
        end
 end
+
+for i,v in next, game.ReplicatedStorage.MusicPlayer:GetDescendants() do
+     if v.IsA(v,"Sound") and v.Name == "Sound" then
+         table.insert(api.sounds,v)
+     end
+ end
 
 return api
