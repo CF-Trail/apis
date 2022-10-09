@@ -2,6 +2,7 @@
 github pls update
 ]]
 api = {
+    ver = "1.0",
     morphs = {},
     dispensers = {},
     fieldboosters = {},
