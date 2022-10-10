@@ -8,6 +8,7 @@ api = {
     toyRequirements = {},
     codes = {"2Billion","FrozenBugReboot","5MFavorites","DarzethDoodads","Thnxcyastoybox","WalmartToys","FourYearFiesta","10mMembers","1MLikes",'PlushFriday','BANNED','Cubly','Teespring','BeesBuzz123','500mil','Marshmallow','ClubConverters','Sure','GumdropsForScience','SecretProfileCode','ClubBean','Wink','38217','Bopmaster','Buzz','Cog','Connoisseur','Crawlers','Nectar','Roof','Wax'},
     sounds = {},
+    fields = {},
     walkspeed = game.Players.LocalPlayer.Character:FindFirstChildOfClass("Humanoid").WalkSpeed,
     jumppower = game.Players.LocalPlayer.Character:FindFirstChildOfClass("Humanoid").JumpPower,
 }
@@ -59,5 +60,9 @@ for i,v in next, game.ReplicatedStorage.MusicPlayer:GetDescendants() do
          table.insert(api.sounds,v)
      end
  end
+
+for i,v in next, workspace.FlowerZones:GetChildren() do
+    table.insert(api.fields,v)
+end
 
 return api
