@@ -77,7 +77,11 @@ function api:WalkTo(destination, walkspeed)
     local character = player.Character
     local humanoid = character:WaitForChild("Humanoid")
     humanoid.WalkSpeed = walkspeed
-
+    for i,v in next, character:GetChildren() do
+       if v.IsA(v,"BasePart") then
+           v.CanCollide = false     
+       end
+    end
     local desti = destination
 
     local waypoints
