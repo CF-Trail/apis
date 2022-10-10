@@ -167,7 +167,7 @@ for i, v in next, game.ReplicatedStorage.MusicPlayer:GetDescendants() do
 end
 
 for i, v in next, workspace.FlowerZones:GetChildren() do
-    table.insert(api.fields, v)
+    table.insert(api.fields, v.Name)
 end
 
 return api
