@@ -189,4 +189,6 @@ for i, v in next, workspace.FlowerZones:GetChildren() do
     table.insert(api.fields, v)
 end
 
+print'api fetched'
+
 return api
