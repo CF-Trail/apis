@@ -40,7 +40,6 @@ api = {
         "Wax"
     },
     sounds = {},
-    fieldnames = {},
     fields = {},
     walkspeed = game.Players.LocalPlayer.Character:FindFirstChildOfClass("Humanoid").WalkSpeed,
     jumppower = game.Players.LocalPlayer.Character:FindFirstChildOfClass("Humanoid").JumpPower
@@ -185,7 +184,6 @@ for i, v in next, game.ReplicatedStorage.MusicPlayer:GetDescendants() do
 end
 
 for i, v in next, workspace.FlowerZones:GetChildren() do
-    table.insert(api.fieldnames, v.Name)
     table.insert(api.fields, v)
 end
 
