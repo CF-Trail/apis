@@ -42,7 +42,9 @@ api = {
     sounds = {},
     fields = {},
     walkspeed = game.Players.LocalPlayer.Character:FindFirstChildOfClass("Humanoid").WalkSpeed,
-    jumppower = game.Players.LocalPlayer.Character:FindFirstChildOfClass("Humanoid").JumpPower
+    jumppower = game.Players.LocalPlayer.Character:FindFirstChildOfClass("Humanoid").JumpPower,
+    windy = nil,
+    vicious = nil,
 }
 
 notifications =
